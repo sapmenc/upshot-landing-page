@@ -8,6 +8,9 @@ import { useEffect, useRef } from "react";
 import { BackgroundLines } from "components/ui/background-lines";
 import { Compare } from "components/ui/compare";
 import { Vortex } from "components/ui/vortex";
+
+
+
 export default function Home() {
   useEffect(() => {
     // Add smooth scroll behavior to anchor links
@@ -25,8 +28,8 @@ export default function Home() {
     };
   }, []);
   return (
-   <div className="bg-[#1B1B1B] w-full ">
-    <div className="flex flex-col items-center justify-center w-full h-screen ">
+   <div className="bg-black w-full ">
+    <div className="flex flex-col items-center justify-center bg-black w-full h-screen ">
     <BackgroundLines className="flex items-center h-screen justify-center w-full flex-col px-4">
      {/* <image */}
      <Image src={logo} alt="logo"/>
@@ -37,9 +40,10 @@ export default function Home() {
     <Link href="#second-part" className="cursor-pointer" >
             <Image src={arrow} alt="arrow" />
           </Link></div></div>
-    <div className="flex flex-col items-center justify-center w-full h-screen space-y-4" >
+      <div className="flex flex-col items-center justify-center w-full h-screen mt-[250px]" >
     <h2 className="text-6xl font-bold bg-clip-text text-transparent text-center bg-gradient-to-b from-white to-[#757575] py-2 ">Won't say much !</h2>
-    <p className="text-lg  bg-clip-text text-transparent text-center bg-gradient-to-b from-white to-[#757575] ">Hover below</p>
+    <p className="text-lg  bg-clip-text my-3 text-transparent text-center bg-gradient-to-b from-white to-[#757575] ">Hover below</p>
+      <div className="p-7 rounded-3xl bg-[#292929] mt-6">
       <Compare
         firstImage="https://ik.imagekit.io/qxqwvk1m1/Upshot/Coming%20Soon%20Page/Component_Left.svg?updatedAt=1732278685316"
         secondImage="https://ik.imagekit.io/qxqwvk1m1/Upshot/Coming%20Soon%20Page/Component_Right.svg?updatedAt=1732278685312"
@@ -47,13 +51,13 @@ export default function Home() {
         secondImageClassname="object-cover object-left-top"
         className="h-[250px] w-[200px] md:h-[500px] md:w-[500px]"
         slideMode="hover"
-      />
+      /></div>
     </div>
-    <div className="flex flex-col items-center justify-center w-full h-screen" id="second-part" >
+    <div className="flex flex-col items-center justify-center w-full h-screen bg-black"   id="second-part" >
   <h2 className="text-6xl font-bold bg-clip-text text-transparent text-center bg-gradient-to-b from-white to-[#757575] py-2 ">The Next Big Thing</h2>
     <p className="text-lg  bg-clip-text text-transparent text-center bg-gradient-to-b from-white to-[#757575] ">Coming to power your teams productivity</p>
     </div>
-    <div className="flex flex-col items-center justify-center  w-full mx-auto rounded-md   overflow-hidden h-screen ">
+    <div className="flex flex-col  bg-inherit items-center justify-center  w-full mx-auto rounded-md gap-5  overflow-hidden h-screen ">
     <Vortex
         backgroundColor="black"
         rangeY={800}
@@ -62,8 +66,8 @@ export default function Home() {
         className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
       >
 
-       <h2 className="text-6xl font-bold bg-clip-text text-transparent text-center bg-gradient-to-b from-white to-[#757575] py-2 ">Join the waitlist</h2>
-       <p className="text-lg bg-clip-text text-transparent text-center bg-gradient-to-b from-white to-[#757575] max-w-md tracking-tight">Be among the first to unlock exclusive access to Upshot's groundbreaking features! Join our waitlist today and enjoy early bird perks designed to give you a seamless head start when we launch. Don’t miss out on this game-changing opportunity!</p>
+       <h2 className="text-8xl mt-4 font-bold bg-clip-text text-transparent text-center bg-gradient-to-b from-white to-[#757575] py-2 ">Join the waitlist</h2>
+       <p className="text-lg text-center mt-5 text-[#9E9E9E] max-w-2xl tracking-tight">Be among the first to unlock exclusive access to Upshot's groundbreaking features! Join our waitlist today and enjoy early bird perks designed to give you a seamless head start when we launch. Don’t miss out on this game-changing opportunity!</p>
         <div className="items-center w-full mt-10">
           <Emailing/>
         </div>

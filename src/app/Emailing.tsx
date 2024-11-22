@@ -5,11 +5,10 @@ import { PlaceholdersAndVanishInput } from "components/ui/placeholders-and-vanis
  
 export function Emailing() {
   const placeholders = [
-    "What's the first rule of Fight Club?",
-    "Who is Tyler Durden?",
-    "Where is Andrew Laeddis Hiding?",
-    "Write a Javascript method to reverse a string",
-    "How to assemble your own PC?",
+    "Type In Your Email",
+    "To Recieve Exclusive Updates",
+    "On Upshot's ",
+    "Revolutionary Features"
   ];
  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -20,7 +19,7 @@ export function Emailing() {
     console.log("submitted");
   };
   return (
-    <div className="flex flex-col justify-center w-full max-w-md mx-auto items-center ">
+    <div className="flex flex-col justify-center w-full max-w-2xl mx-auto items-center ">
      
       <PlaceholdersAndVanishInput
         placeholders={placeholders}
