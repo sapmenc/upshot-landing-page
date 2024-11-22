@@ -1,15 +1,13 @@
 "use client"
-import { BackgroundLines } from "@/components/ui/background-lines";
-import { Compare } from "@/components/ui/compare";
-import { Vortex } from "@/components/ui/vortex";
 import { Emailing } from "./Emailing";
-import logo from "@/assets/Upshot_main_logo.svg"
-import arrow from "@/assets/Down_arrows.svg"
-import left from "@/assets/Component_Left.svg"
-import right from "@/assets/Component_Right.svg"
+import logo from "../assets/Upshot_main_logo.svg"
+import arrow from "../assets/Down_arrows.svg"
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
+import { BackgroundLines } from "components/ui/background-lines";
+import { Compare } from "components/ui/compare";
+import { Vortex } from "components/ui/vortex";
 export default function Home() {
   useEffect(() => {
     // Add smooth scroll behavior to anchor links

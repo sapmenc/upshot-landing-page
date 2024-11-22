@@ -1,5 +1,5 @@
 import React from "react";
-import { Compare } from "@/components/ui/compare";
+import { Compare } from "components/ui/compare";
 
 export default function CompareDemo() {
   return (

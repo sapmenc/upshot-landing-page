@@ -1,4 +1,4 @@
-import { CardSpotlight } from "@/components/ui/card-spotlight";
+import { CardSpotlight } from "components/ui/card-spotlight";
 
 export default function CardSpotlightDemo() {
   return (
