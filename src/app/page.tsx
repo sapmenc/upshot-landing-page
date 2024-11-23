@@ -37,13 +37,13 @@ export default function Home() {
     <div className="flex flex-col items-center gap-3 mb-3">
     <h2 className="text-center text-[#9E9E9E]">Launching soon</h2>
     
-    <Link href="#second-part" className="cursor-pointer" >
+    <Link href="#second-part" className="cursor-pointer z-10" >
             <Image src={arrow} alt="arrow" />
           </Link></div></div>
-      <div className="flex flex-col items-center justify-center w-full h-screen mt-[250px]" >
+      <div className="flex flex-col items-center justify-center w-full h-screen mt-[250px]"id="second-part" >
     <h2 className="text-6xl font-bold bg-clip-text text-transparent text-center bg-gradient-to-b from-white to-[#757575] py-2 ">Won't say much !</h2>
     <p className="text-lg  bg-clip-text my-3 text-transparent text-center bg-gradient-to-b from-white to-[#757575] ">Hover below</p>
-      <div className="p-7 rounded-3xl bg-[#292929] mt-6">
+      <div className=" rounded-3xl bg-[#292929]   space-y-9 " >
       <Compare
         firstImage="https://ik.imagekit.io/qxqwvk1m1/Upshot/Coming%20Soon%20Page/Component_Left.svg?updatedAt=1732278685316"
         secondImage="https://ik.imagekit.io/qxqwvk1m1/Upshot/Coming%20Soon%20Page/Component_Right.svg?updatedAt=1732278685312"
@@ -53,7 +53,7 @@ export default function Home() {
         slideMode="hover"
       /></div>
     </div>
-    <div className="flex flex-col items-center justify-center w-full h-screen bg-black"   id="second-part" >
+    <div className="flex flex-col items-center justify-center w-full h-screen bg-black"  >
   <h2 className="text-6xl font-bold bg-clip-text text-transparent text-center bg-gradient-to-b from-white to-[#757575] py-2 ">The Next Big Thing</h2>
     <p className="text-lg  bg-clip-text text-transparent text-center bg-gradient-to-b from-white to-[#757575] ">Coming to power your teams productivity</p>
     </div>
