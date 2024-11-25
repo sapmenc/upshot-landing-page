@@ -17,6 +17,11 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Coming To Power Your Team's Productivity | Upshot",
   description: "Be among the first to unlock exclusive access to Upshot's groundbreaking features! Join our waitlist today and enjoy early bird perks designed to give you a seamless head start when we launch. Don’t miss out on this game-changing opportunity!",
+  icons: {
+    icon: "/favicon.ico", // Path to your favicon
+    shortcut: "/favicon.ico", // Optional, for older browsers
+    apple: "/favicon.png", // Optional, for Apple devices
+    }
 //   icons: {
 //     icon:['/favicon.png'] 
 // }
