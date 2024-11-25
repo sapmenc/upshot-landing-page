@@ -22,9 +22,6 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico", // Optional, for older browsers
     apple: "/favicon.png", // Optional, for Apple devices
     }
-//   icons: {
-//     icon:['/favicon.png'] 
-// }
 };
 
 export default function RootLayout({
@@ -37,7 +34,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-           {/* <link rel="icon" href="/favicon.ico" /> */}
         {children}
       </body>
     </html>
