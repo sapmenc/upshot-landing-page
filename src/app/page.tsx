@@ -1,6 +1,7 @@
 "use client"
 import { Emailing } from "./Emailing";
 import logo from "../assets/Upshot_main_logo.svg"
+import logo1 from "../assets/Upshot_logo_MS.svg"
 import arrow from "../assets/Down_arrows.svg"
 import Image from "next/image";
 import Link from "next/link";
@@ -30,26 +31,27 @@ export default function Home() {
   return (
    <div className="bg-black w-full ">
     <div className="flex flex-col items-center justify-center bg-black w-full h-screen ">
-    <BackgroundLines className="flex items-center h-screen justify-center w-full flex-col px-4">
+    <BackgroundLines className="flex items-center h-screen justify-center w-full flex-col sm:px-4 px-0">
      {/* <image */}
-     <Image src={logo} alt="logo"/>
+     <Image src={logo} className="sm:block hidden" alt="logo"/>
+     <Image src={logo1} className="block sm:hidden" alt="logo"/>
     </BackgroundLines>
     <div className="flex flex-col items-center gap-3 mb-3">
     <h2 className="text-center text-[#9E9E9E]">Launching soon</h2>
     
-    <Link href="#second-part" className="cursor-pointer z-10" >
+    <Link href="#hover" className="cursor-pointer z-10" >
             <Image src={arrow} alt="arrow" />
           </Link></div></div>
-      <div className="flex flex-col items-center justify-center w-full h-screen mt-[250px]" id="second-part" >
+      <div className="flex flex-col items-center justify-center w-full h-screen mt-[250px]" id="hover" >
     <h2 className="text-6xl font-bold bg-clip-text text-transparent text-center bg-gradient-to-b from-white to-[#757575] py-2 ">Won't say much !</h2>
     <p className="text-lg  bg-clip-text my-3 text-transparent text-center bg-gradient-to-b from-white to-[#757575] ">Hover below</p>
-      <div className=" rounded-3xl bg-[#292929] m-4 p-7 " >
+      <div className=" rounded-3xl bg-[#292929] m-4 p-7 h-[350px] w-[350px] md:w-[550px] md:h-[550px]">
       <Compare
         firstImage="https://ik.imagekit.io/qxqwvk1m1/Upshot/Coming%20Soon%20Page/Component_Left.svg?updatedAt=1732278685316"
         secondImage="https://ik.imagekit.io/qxqwvk1m1/Upshot/Coming%20Soon%20Page/Component_Right.svg?updatedAt=1732278685312"
         firstImageClassName="object-cover object-left-top"
         secondImageClassname="object-cover object-left-top"
-        className="h-[250px] w-[200px] md:h-[500px] md:w-[500px]"
+        className="h-full w-full md:h-full md:w-full"
         slideMode="hover"
       /></div>
     </div>
@@ -66,7 +68,7 @@ export default function Home() {
         className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
       >
 
-       <h2 className="text-8xl mt-4 font-bold bg-clip-text text-transparent text-center bg-gradient-to-b from-white to-[#757575] py-2 ">Join the waitlist</h2>
+       <h2 className="text-8xl  mt-4 font-bold bg-clip-text text-transparent text-center bg-gradient-to-b from-white to-[#757575] py-2  ">Join the waitlist</h2>
        <p className="text-lg text-center mt-5 text-[#9E9E9E] max-w-2xl tracking-tight">Be among the first to unlock exclusive access to Upshot's groundbreaking features! Join our waitlist today and enjoy early bird perks designed to give you a seamless head start when we launch. Don’t miss out on this game-changing opportunity!</p>
         <div className="items-center w-full mt-10">
           <Emailing/>
