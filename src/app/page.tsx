@@ -55,7 +55,7 @@ export default function Home() {
     </div>
     <div className="flex flex-col items-center justify-center w-full h-screen bg-black"  >
   <h2 className="text-6xl font-bold bg-clip-text text-transparent text-center bg-gradient-to-b from-white to-[#757575] py-2 ">The Next Big Thing</h2>
-    <p className="text-lg  bg-clip-text text-transparent text-center bg-gradient-to-b from-white to-[#757575] ">Coming to power your teams productivity</p>
+    <p className="text-lg  bg-clip-text text-transparent text-center bg-gradient-to-b from-white to-[#757575] ">Coming to power your team's productivity</p>
     </div>
     <div className="flex flex-col  bg-inherit items-center justify-center  w-full mx-auto rounded-md gap-5  overflow-hidden h-screen ">
     <Vortex
