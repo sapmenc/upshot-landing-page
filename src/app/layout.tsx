@@ -24,11 +24,15 @@ export const metadata: Metadata = {
     apple: "/favicon.png", // Optional, for Apple devices
     },
   openGraph:{
+    determiner: "the",
     title: "Coming To Power Your Team's Productivity | Upshot",
     description: "Be among the first to unlock exclusive access to Upshot's groundbreaking features! Join our waitlist today and enjoy early bird perks designed to give you a seamless head start when we launch. Don’t miss out on this game-changing opportunity!",
+    emails: ["product@sapmenc.com"],
+    phoneNumbers: ["+91 1234567890"],
+    images:"/OG_Image.png",
+    url: "https://upshot.co.in",
     countryName:"India",
     ttl:60,
-    images:"/OG_Image.png"
   },
   verification:{
     google:"google",
